@@ -6,7 +6,7 @@ RUN apt update && apt install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN python3.10 -m pip install --upgrade pip setuptools wheel
-RUN pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121 
+RUN pip install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.1 -c pytorch -c nvidia
 RUN pip install "unsloth[cu121-torch240] @ git+https://github.com/unslothai/unsloth.git"
 
 CMD [ "/bin/sh" , "-c", "tail -f /dev/null" ]
