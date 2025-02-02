@@ -8,6 +8,6 @@ RUN apt update && apt install -y --no-install-recommends \
 RUN pip install --upgrade pip setuptools wheel
 RUN pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
 RUN pip install "unsloth[cu121-torch240] @ git+https://github.com/unslothai/unsloth.git"
-RUN pip install jupyterlab
+RUN pip install jupyterlab ipywidgets
 
 CMD [ "/bin/sh" , "-c", "tail -f /dev/null" ]
