@@ -1,14 +1,14 @@
-# Unsloth Docker
-================
+# Unsloth Docker [![Docker](https://img.shields.io/badge/docker-257bd6?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/repository/docker/uptospace/unsloth/general)
 
-This project is a Docker-based environment for deep learning and data science, utilizing NVIDIA CUDA and PyTorch.
+This project is a Docker-based environment for deep learning and data science, utilizing NVIDIA CUDA and PyTorch.\
+It's optimized to be able to run on a paperspace environment.
 
 ## Overview
 
 This project provides a pre-configured Docker environment for deep learning and data science tasks, including:
 
-* NVIDIA CUDA 12.1.0
-* PyTorch 2.4.0
+* NVIDIA CUDA 12.4.0
+* PyTorch 2.5.0
 * JupyterLab and iPyWidgets for interactive development
 
 ## Requirements
@@ -24,11 +24,11 @@ This project provides a pre-configured Docker environment for deep learning and 
 
 ## Dependencies
 
-* NVIDIA CUDA 12.1.0
-* PyTorch 2.4.0
+* NVIDIA CUDA 12.4.0
+* PyTorch 2.5.0
 * JupyterLab
 * iPyWidgets
-* unsloth[cu121-torch240]
+* unsloth[cu124-torch250]
 
 ## License
 
